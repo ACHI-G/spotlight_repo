@@ -41,7 +41,7 @@ const resources = {
 
             cosmo: {
                 intro1: 'SCHNITTSCHUTZ FÜR DEN RETTUNGSHUND',
-                intro2: 'Zusammenarbeit mit Giorgio Biasco',
+                intro2: 'Zusammenarbeit mit GB',
                 intro3: 'Das Thema des Hauptmoduls im 5. Semester hiess Protected. Gesucht wurden neuartige Schutzkonzepte für Profis aus unterschiedlichen Berufsgruppen.',
                 intro4: 'Testudo ist ein modularer Schutzanzug mit Schnitt schutz und integrierten Leuchtelementen für den Rettungshund der Zukunft.',
                 intro5: 'Das modulare System besteht aus drei Teilen: Anzug, Halsband und Geschirr. Der Anzug besteht aus der UVEX Dyneema Textiltechnologie mit integrierten Reflektoren an den Gelenken und am Körper des Anzuges. Das Halsband besitzt LED-Leuchten an der Front, um dem Hund die Sicht in der Dunkelheit zu ermöglichen, aber auch aktive Leuchtelemente, die im Textil eingenäht werden. Das Geschirr besitzt ebenfalls aktive Leuchtelemente und Klett auf der Oberseite, um den Anzug mit verschiedenen anderen Schutzelementen zu erweitern.',
@@ -68,7 +68,7 @@ const resources = {
 
             floppy: {
                 intro1: 'VIRTUELLE REALITÄT UND ANGSTBEWÄLTIGUNG',
-                intro2: 'Zusammenarbeit mit Marc Gämperle',
+                intro2: 'Zusammenarbeit mit MG',
                 intro3: 'Eine Vision, wie virtuelle Realität Menschen im Leben unterstützen kann.',
                 intro4: 'Ein Moment der Stille. Wie ein Donnergrollen baut sich der Applaus langsam auf. Alle stehen auf. Ein tosender Beifallssturm entfesselt sich.',
                 intro5: 'Das alles trotz feuchter Hände, zittriger Glieder und erhöhtem Puls. Im Rampenlicht stehen und vor Leuten sprechen ist ein Talent, das nicht allen angeboren ist. Viel eher wird der öffentliche Auftritt von Nervosität, Stress und sogar Angst begleitet. Training schwächt sie jedoch ab und stärkt die Selbstsicherheit.',
@@ -138,7 +138,7 @@ const resources = {
 
             cosmo: {
                 intro1: 'CUT PROTECTION FOR THE RESCUE DOG',
-                intro2: 'Collaboration with Giorgio Biasco',
+                intro2: 'Collaboration with GB',
                 intro3: 'The topic of the main module in the 5th semester was called Protected. Novel protection concepts for professionals from different professions were sought.',
                 intro4: 'Testudo is a modular protective suit with cut protection and integrated light elements for the rescue dog of the future.',
                 intro5: 'The modular system consists of three parts: Suit, collar and harness. The suit is made of UVEX Dyneema textile technology with integrated reflectors on the joints and body of the suit. The collar has LED lights on the front to allow the dog to see in the dark, but also active light elements sewn into the textile. The harness also has active light elements and Velcro on the top to expand the suit with various other protective elements.',
@@ -165,7 +165,7 @@ const resources = {
 
             floppy: {
                 intro1: 'VIRTUAL REALITY AND ANXIETY MANAGEMENT',
-                intro2: 'Collaboration with Marc Gämperle',
+                intro2: 'Collaboration with MG',
                 intro3: 'A vision how virtual reality can empower people in their lives.',
                 intro4: 'A moment of silence. Like a roll of thunder, the applause slowly builds. The audience all rise to their feet. A thundering storm of applause is unleashed.',
                 intro5: 'All this despite sweaty hands, shaky limbs and a raised pulse. Being in the spotlight and speaking in front of people is a talent that not everybody is born with. Public appearances are much more likely to be accompanied by nervousness, stress and even fear. Training, however, softens them and strengthens self-confidence.',

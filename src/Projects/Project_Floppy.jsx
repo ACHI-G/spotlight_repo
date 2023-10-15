@@ -109,7 +109,7 @@ export default function Project_Floppy(props) {
                                                             <div className="hiddenAnimation">
                                                                 {' '}
                                                                 {t('floppy.intro2')}
-                                                                {/* Zusammenarbeit mit Marc Gämperle */}
+                                                                {/* Zusammenarbeit mit MG */}
                                                                 <div> {' '} <br />{' '} </div>
                                                                 <div> {' '} <br />{' '} </div>
                                                                 <div> {' '} <br />{' '} </div>

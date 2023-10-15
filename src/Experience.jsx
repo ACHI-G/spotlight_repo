@@ -6,7 +6,6 @@ import { SpaceDust } from './components/Effects/SpaceDust.jsx';
 
 import Models from './Models.jsx';
 import Overlay from './Overlay.jsx';
-import TributeLog from './Projects/Tribute.jsx';
 
 import Project_About from './Projects/Project_About.jsx';
 import Project_AT from './Projects/Project_AT.jsx';
@@ -85,7 +84,6 @@ export default function Experience() {
 
             {/* Overlay for additional UI elements */}
             <Overlay ref={overlay} scroll={scroll} />
-            <TributeLog/>
 
             {/* Project components + their state */}
             <Suspense fallback={false}>

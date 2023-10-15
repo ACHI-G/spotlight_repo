@@ -9,9 +9,6 @@ import Image_About_Boii from '/images/About/About_Boii.webp';
 export default function Project_About(props) {
     const { t } = useTranslation();
 
-    /*  useEffect(() => {
-        console.log('Project_About component rendered');
-      }, [props.isOpen]); */
 
     function closeModal() {
         props.setIsOpen(false);
@@ -71,29 +68,14 @@ export default function Project_About(props) {
                                                 <div id="laufText">
                                                     <div className="text-left sm:text-[18px] hyphens-auto lg:mb-10">
                                                         <section className=" font-bold">
-                                                            Achim Joas Gafner
+                                                            Name
                                                         </section>
                                                         <div> {' '} <br />{' '} </div>
                                                         <div>
                                                             {t('about.intro1')}
-                                                            {/* Ein praktischer, pragmatischer Kreativer mit einer
-                                                                Leidenschaft fürs Detail. Sei es in der physischen oder
-                                                                virtuellen Welt. Immer bestrebt, neue
-                                                                Her&shy;aus&shy;for&shy;de&shy;rungen
-                                                                an&shy;zu&shy;neh&shy;men und sich zu neuen
-                                                                Höchstleistungen anzutreiben. In der Freizeit beim
-                                                                Bouldern, Boxen, Mo&shy;tor&shy;rad&shy;fahren oder im
-                                                                Atelier zu finden. */}
                                                             <div> {' '} <br />{' '} </div>
                                                             <div> {' '} <br />{' '} </div>
                                                             {t('about.intro2')}
-                                                            {/* Industriedesign bedeutet Kreativität und
-                                                                Pro&shy;blem&shy;lö&shy;sung. Es geht darum, sinnvolle,
-                                                                auf den Menschen bezogene Erlebnisse zu gestalten. Es
-                                                                geht um Verantwortung für die Zukunft. In sozialer,
-                                                                ethischer und ökologischer Hinsicht. Darum, uns zu
-                                                                berühren, uns zum Nachdenken anregen und zu ermutigen.
-                                                                Darüber, wie die Welt sein könnte. */}
                                                         </div>
                                                     </div>
                                                 </div>

@@ -28,8 +28,7 @@ const Overlay = forwardRef(({ scroll, nav }, ref) => {
                     <div style={{ height: '100%' }}>
                         <div className="dot">
                             <h1>about</h1>
-                            Achim Joas Gafner: Industrial Designer FHNW (BA). Dark Arts Electrician
-                            (EFZ). Wannabe WebDev. 🇨🇭
+                            insert About text
                         </div>
                     </div>
                     <div style={{ height: '100%' }}>

@@ -107,7 +107,7 @@ export default function Project_Cosmo(props) {
                                                             <div className="hiddenAnimation">
                                                                 {' '}
                                                                 {t('cosmo.intro2')}
-                                                                {/* Zusammenarbeit mit Giorgio Biasco */}
+                                                                {/* Zusammenarbeit mit GB */}
                                                                 <div> {' '} <br />{' '} </div>
                                                                 <div> {' '} <br />{' '} </div>
                                                                 <div> {' '} <br />{' '} </div>

@@ -1,6 +1,6 @@
 {
-    "name": "Portfolio Achim Gafner",
-    "short_name": "Achi-G",
+    "name": "Portfolio",
+    "short_name": "",
     "theme_color": "#a99e90",
     "background_color": "#a99e90",
     "icons": [
@@ -31,7 +31,7 @@
     ],
     "display": "fullscreen",
     "scope": ".",
-    "start_url": "https://www.achim-gafner.ch/"
+    "start_url": "insert website url"
   }
 
   

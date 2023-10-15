@@ -32,15 +32,6 @@ export default function Project_Misc(props) {
 
     return (
         <>
-            {/* <div className="fixed inset-0 flex items-center justify-center">
-        <button
-          type="button"
-          onClick={openModal}
-          className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-        >
-          Open dialog
-        </button>
-      </div> */}
 
             <Transition appear show={props.isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-10" onClose={closeModal}>
@@ -68,7 +59,6 @@ export default function Project_Misc(props) {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95">
                                 <Dialog.Panel className="w-full w-11/12 max-w-xl overflow-hidden shadow-xl rounded-2xl transition-all">
-                                    {/* modal-box max-h-none h-[95%] w-11/12 max-w-xl p-0 overflow-auto overscroll-none bg-transparent"> */}
                                     <IntersectionObserverComponent />
 
                                     <button
@@ -143,14 +133,14 @@ export default function Project_Misc(props) {
                                                                             className="hover:underline"
                                                                             href="https://www.davidhug.ch/"
                                                                             target="_blank">
-                                                                            David Hug
+                                                                            DH
                                                                         </a>{' '}
                                                                         &{' '}
                                                                         <a
                                                                             className="hover:underline"
                                                                             href="https://www.hugdorfmueller.com/"
                                                                             target="_blank">
-                                                                            HUG&DORFMÜLLER
+                                                                            Company Name
                                                                         </a>
                                                                         . (Blender, Illu, PSD)
                                                                     </div>
@@ -234,14 +224,14 @@ export default function Project_Misc(props) {
                                                                             className="hover:underline"
                                                                             href="https://www.davidhug.ch/"
                                                                             target="_blank">
-                                                                            David Hug
+                                                                            DH
                                                                         </a>{' '}
                                                                         &{' '}
                                                                         <a
                                                                             className="hover:underline"
                                                                             href="https://www.hugdorfmueller.com/"
                                                                             target="_blank">
-                                                                            HUG&DORFMÜLLER
+                                                                            Company Name
                                                                         </a>
                                                                         . (Blender, After Effects)
                                                                     </div>

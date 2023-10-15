@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* montserrat-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./montserrat-v25-latin/montserrat-v25-latin-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./montserrat-v25-latin/montserrat-v25-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./montserrat-v25-latin/montserrat-v25-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  src: url('./montserrat-v25-latin/montserrat-v25-latin-700italic.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    touch-action: none;
+    position: fixed;
+  }
+}
+
+.modal {
+  cursor: auto;
+}
+
+
+
+
+/* Modal Animation & Effects */
+.hiddenAnimation {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateY(20%);
+  transition: all 0.8s;
+}
+
+.hiddenAnimationAlt {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(100%);
+  transition: all 0.8s;
+}
+
+@media(prefers-reduced-motion) {
+  .hiddenAnimation {
+    transition: none
+  }
+}
+
+@media(prefers-reduced-motion) {
+  .hiddenAnimationAlt {
+    transition: none
+  }
+}
+
+.showAnimation {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0%);
+}
+
+.itemDelay:nth-child(2) {
+  transition-delay: 200ms
+}
+
+.itemDelay:nth-child(3) {
+  transition-delay: 400ms
+}
+
+.itemDelay:nth-child(4) {
+  transition-delay: 600ms
+}
+
+.modal--open {
+  pointer-events: auto;
+}
+
+
+
+
+/* Menu Button style and animations */
+.MenuBackgroundHidden {
+  transform-origin: 0 108%;
+  width: 100%;
+  height: 90%;
+  transition: transform 0.5s;
+  transform: scaleY(0.1);
+
+}
+
+.MenuButton:hover .MenuBackgroundHidden {
+  transform: scaleY(1);
+  transition: transform 0.2s;
+
+}
+
+.MenuSubButtonBackgroundHidden {
+  opacity: 0;
+  transform: translate3d(0, 200%, 0);
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+
+}
+
+.MenuButton:hover .animateMenuSubButton {
+  opacity: 1;
+  transform: translate3d(0, 100%, 0);
+  transition: 0.1s;
+}
+
+.btnDelay:nth-child(2) {
+  transition-delay: 50ms
+}
+
+@media(prefers-reduced-motion) {
+  .MenuBackgroundHidden {
+    transition: none
+  }
+
+  .MenuSubButtonBackgroundHidden {
+    transition: none
+  }
+}
+
+
+/* Fonts family, sizes and weights*/
+#title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  /* color: #a99e90; */
+}
+
+#sub-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #9b9a99;
+}
+
+#zwischenTitel {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #a99e90;
+}
+
+#laufText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  /* color: #9b9a99; */
+  color: #9b9a99;
+
+
+  overflow-wrap: break-normal;
+  hyphens: manual;
+
+  /* color: #212427 */
+}
+
+#laufTextKursiv {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  /* bold */
+  color: #9b9a99;
+}
+
+#laufTextFinal {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  /* light */
+  color: #999999;
+}
+
+/* bg shizzle #f2f2f2
+final bg balken #eeefef */
+
+
+#content1::after {
+  content: "\a";
+  white-space: pre;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+
+
+.scroll {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+#root {
+  overflow: auto;
+}
+
+.scroll {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 5%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y proximity; */
+}
+
+.scroll>div {
+  scroll-snap-align: start;
+}
+
+
+
+
+
+/* Loading Screen Styling */
+/* Loading Screen */
+.loadingScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: background-color;
+  /* background-image: inherit; */
+
+
+  /* background-color: inherit; */
+  /* background-image: inherit; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 2s;
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #a99e90;
+
+}
+
+.loadingScreen__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.loadingScreen__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 40px;
+
+  color: white;
+  border: 1px solid #a99e90;
+  font-weight: bold;
+  font-size: 2.5rem;
+  /* border-radius: 20px; */
+  transition: background-color 0.4s;
+}
+
+.loadingScreen__button:hover {
+  background-color: hsla(0, 0%, 0%, 0.3);
+  cursor: pointer;
+}
+
+.loadingScreen__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12px;
+}
+
+.loadingScreen--started {
+  opacity: 0;
+  pointer-events: auto;
+}
+
+
+
+
+
+
+
+
+
+/* Overlay Styling */
+body {
+
+  position: absolute;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 8em;
+  font-weight: 100;
+  line-height: 1em;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: auto;
+}
+
+.caption {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 80px;
+  color: white;
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 1em;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: auto;
+}
+
+.dot {
+  pointer-events: none;
+  position: sticky;
+  top: 0px;
+  display: inline-block;
+  max-width: 600px;
+  padding: 0;
+  padding: 20px;
+  padding-right: 15%;
+  color: #ffffff;
+  line-height: 1.6em;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+.dot>h1 {
+  -webkit-font-smoothing: auto;
+  pointer-events: none;
+  color: white;
+  font-size: 5em;
+  font-weight: 100;
+  line-height: 1em;
+  margin: 0;
+  margin-bottom: 0.25em;
+
+}
+
+.dot h2 {
+  max-width: 400px;
+}
+
+@media (min-width: 1500px) {
+  .dot {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .caption {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .caption {
+    font-size: 3em;
+  }
+
+  .dot>h1 {
+    font-size: 3em;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .caption {
+    font-size: 2em;
+  }
+
+  .dot>h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .caption {
+    font-size: 1em;
+  }
+
+  .dot>h1 {
+    font-size: 3em;
+  }
+}
+
+
+
+
+/* Custom Scrollbar */
+/* width and left margin */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3d3d3d;
+  /* border: 2px solid rgba(255, 255, 255, 0); */
+  margin-block: 8vh;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 0px;
+}
+
+.loadingScreen--fadeOut {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  /* Adjust the duration and timing function as needed */
+  pointer-events: none;
+  /* Disable pointer events while fading out */
+}
